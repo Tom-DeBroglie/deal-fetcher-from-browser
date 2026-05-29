@@ -54,6 +54,12 @@ REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "20"))
 SLEEP_SECONDS = float(os.getenv("SLEEP_SECONDS", "0.8"))
 SEND_EMPTY_REPORT = os.getenv("SEND_EMPTY_REPORT", "false").lower() in {"1", "true", "yes"}
 ENABLE_DDG_SEARCH = os.getenv("ENABLE_DDG_SEARCH", "true").lower() in {"1", "true", "yes"}
+ADD_YEAR_VARIANTS = os.getenv("ADD_YEAR_VARIANTS", "false").lower() in {"1", "true", "yes"}
+MAX_FOREIGN_OFFICIAL_REPORT_ITEMS = int(os.getenv("MAX_FOREIGN_OFFICIAL_REPORT_ITEMS", "3"))
+MAX_FOREIGN_INTEL_REPORT_ITEMS = int(os.getenv("MAX_FOREIGN_INTEL_REPORT_ITEMS", "7"))
+MAX_DOMESTIC_OFFICIAL_REPORT_ITEMS = int(os.getenv("MAX_DOMESTIC_OFFICIAL_REPORT_ITEMS", "3"))
+MAX_DOMESTIC_INTEL_REPORT_ITEMS = int(os.getenv("MAX_DOMESTIC_INTEL_REPORT_ITEMS", "7"))
+MIN_STRONG_PROMO_HITS = int(os.getenv("MIN_STRONG_PROMO_HITS", "1"))
 
 PROMO_KEYWORDS = [
     "免费", "限免", "白嫖", "薅羊毛", "羊毛", "优惠", "折扣", "打折", "半价", "低至", "立减", "满减",
@@ -85,6 +91,55 @@ DATE_PATTERNS = [
 ]
 
 
+STRONG_PROMO_KEYWORDS = [
+    "免费额度", "赠送额度", "新用户额度", "试用额度", "调用额度", "api额度", "推理额度", "模型额度", "算力额度",
+    "免费token", "免费 token", "赠送token", "赠送 token", "tokens额度", "token额度", "token plan",
+    "优惠活动", "限时优惠", "限时免费", "限免", "免费试用", "公测免费", "免费领取", "领取入口", "活动入口",
+    "优惠券", "代金券", "抵扣券", "算力券", "资源券", "兑换券", "折扣码", "优惠码", "兑换码", "邀请码",
+    "学生优惠", "教育优惠", "学生免费", "学生认证", "教育认证", "开发者福利", "开发者计划", "开发者额度",
+    "免费gpu", "免费 gpu", "免费算力", "算力券", "gpu券", "云资源免费", "云服务器免费",
+    "降价", "价格调整", "价格下调", "限时折扣", "折扣", "打折", "半价", "立减", "满减", "补贴",
+    "free credits", "free credit", "promo credits", "trial credits", "cloud credits", "api credits", "compute credits", "gpu credits",
+    "free tokens", "free token", "bonus tokens", "token credits", "monthly credits",
+    "free trial", "free tier", "limited time free", "limited-time free", "free access", "free plan",
+    "student discount", "student credits", "student plan", "education discount", "academic discount", "developer credits",
+    "coupon code", "promo code", "discount code", "voucher", "coupon", "redeem code", "giveaway", "grant",
+    "price cut", "price reduction", "pricing update", "limited offer", "special offer", "launch offer",
+]
+
+FOREIGN_OFFICIAL_DOMAINS = [
+    "openai.com", "anthropic.com", "blog.google", "developers.googleblog.com", "google.com", "cloud.google.com",
+    "github.blog", "github.com", "education.github.com", "huggingface.co", "aws.amazon.com", "azure.microsoft.com",
+    "microsoft.com", "microsoft.ai", "techcommunity.microsoft.com", "ai.azure.com", "nvidia.com",
+]
+
+DOMESTIC_OFFICIAL_DOMAINS = [
+    "aliyun.com", "alibabacloud.com", "bailian.console.aliyun.com", "volcengine.com", "developer.volcengine.com",
+    "bytedance.com", "coze.cn", "doubao.com", "tencent.com", "cloud.tencent.com", "hunyuan.tencent.com",
+    "baidu.com", "cloud.baidu.com", "qianfan.cloud.baidu.com", "huaweicloud.com", "xfyun.cn", "xinghuo.xfyun.cn",
+    "bigmodel.cn", "open.bigmodel.cn", "zhipuai.cn", "moonshot.cn", "platform.moonshot.cn",
+    "deepseek.com", "api-docs.deepseek.com", "siliconflow.cn", "cloud.siliconflow.cn", "modelscope.cn",
+    "xiaomi.com", "mi.com", "xiaomimimo.com", "platform.xiaomimimo.com", "mimo.xiaomi.com", "xiaoai.mi.com",
+    "vivo.com", "vivo.com.cn", "developer.vivo.com", "dev.vivo.com.cn", "meituan.com", "tech.meituan.com",
+]
+
+FOREIGN_INTEL_DOMAINS = [
+    "producthunt.com", "indiehackers.com", "hackernews.com", "news.ycombinator.com", "techcrunch.com", "theverge.com",
+]
+
+DOMESTIC_INTEL_DOMAINS = [
+    "csdn.net", "blog.csdn.net", "juejin.cn", "cnblogs.com", "oschina.net", "infoq.cn", "jiqizhixin.com",
+    "qbitai.com", "aibase.com", "36kr.com", "geekpark.net", "sspai.com", "leiphone.com", "ifanr.com",
+]
+
+CATEGORY_LABELS = {
+    "foreign_official": "国外大厂官号",
+    "domestic_official": "国内大厂官号",
+    "foreign_intel": "国外优惠活动情报账户/网站",
+    "domestic_intel": "国内优惠活动情报账户/网站",
+}
+
+
 @dataclass
 class Candidate:
     url: str
@@ -107,6 +162,7 @@ class ScoredItem:
     matched_keywords: List[str]
     published_guess: str = ""
     content_hash: str = ""
+    source_category: str = "domestic_intel"
 
 
 def read_lines(path: Path) -> List[str]:
@@ -133,6 +189,39 @@ def domain_of(url: str) -> str:
         return netloc[4:] if netloc.startswith("www.") else netloc
     except Exception:
         return ""
+
+
+
+
+
+def domain_matches(domain: str, rules: List[str]) -> bool:
+    return any(domain == x or domain.endswith("." + x) for x in rules)
+
+
+def has_chinese(text: str) -> bool:
+    return bool(re.search(r"[\u4e00-\u9fff]", text or ""))
+
+
+def classify_source(url: str, title: str = "", text: str = "") -> str:
+    """把来源分成：国外官号、国内官号、国外情报、国内情报。"""
+    d = domain_of(url)
+    path = urlparse(url).path.lower()
+
+    # 少数“官方账号开在社区平台”的情况，用路径修正。
+    if d == "blog.csdn.net" and "meituantech" in path:
+        return "domestic_official"
+
+    if domain_matches(d, FOREIGN_OFFICIAL_DOMAINS):
+        return "foreign_official"
+    if domain_matches(d, DOMESTIC_OFFICIAL_DOMAINS):
+        return "domestic_official"
+    if domain_matches(d, FOREIGN_INTEL_DOMAINS):
+        return "foreign_intel"
+    if domain_matches(d, DOMESTIC_INTEL_DOMAINS):
+        return "domestic_intel"
+
+    # 未知网页按语言粗分，避免完全漏掉搜索引擎找到的高分帖子。
+    return "domestic_intel" if has_chinese(" ".join([title, text])) else "foreign_intel"
 
 
 def is_blocked(url: str, blocked_domains: List[str]) -> bool:
@@ -344,6 +433,14 @@ def keyword_hits(text: str, words: List[str]) -> Tuple[int, List[str]]:
     return hits, matched
 
 
+
+
+
+def strong_promo_hits(text: str) -> Tuple[int, List[str]]:
+    """强优惠词命中：避免把普通模型发布、普通新闻误判成优惠活动。"""
+    return keyword_hits(text, STRONG_PROMO_KEYWORDS)
+
+
 def guess_date(text: str) -> str:
     for pat in DATE_PATTERNS:
         m = re.search(pat, text)
@@ -368,11 +465,13 @@ def score_candidate(c: Candidate, trusted_domains: List[str], extra_keywords: Li
     action_hits, action_words = keyword_hits(full_text, ACTION_KEYWORDS)
     neg_hits, neg_words = keyword_hits(full_text, NEGATIVE_KEYWORDS)
     extra_hits, extra_words = keyword_hits(full_text, extra_keywords)
+    strong_hits, strong_words = strong_promo_hits(full_text)
 
     title_text = (full_title + " " + c.title).lower()
     title_promo_hits, _ = keyword_hits(title_text, PROMO_KEYWORDS)
     title_ai_hits, _ = keyword_hits(title_text, AI_KEYWORDS)
     title_action_hits, _ = keyword_hits(title_text, ACTION_KEYWORDS)
+    title_strong_hits, _ = strong_promo_hits(title_text)
 
     d = domain_of(c.url)
     trusted = any(d == x or d.endswith("." + x) for x in trusted_domains)
@@ -380,12 +479,16 @@ def score_candidate(c: Candidate, trusted_domains: List[str], extra_keywords: Li
     total_hits = promo_hits + ai_hits + action_hits + extra_hits
     if promo_hits < MIN_PROMO_HITS or ai_hits < MIN_AI_HITS or total_hits < MIN_TOTAL_KEYWORD_HITS:
         return None
+    # 必须至少命中一个“强优惠”表达，避免普通 AI 新闻因为 free/token/api 等泛词被推送。
+    if strong_hits < MIN_STRONG_PROMO_HITS and title_strong_hits < MIN_STRONG_PROMO_HITS:
+        return None
 
     score = 0
     score += min(promo_hits, 8) * 2
     score += min(ai_hits, 8) * 1
     score += min(action_hits, 6) * 2
     score += min(extra_hits, 5) * 2
+    score += min(strong_hits, 6) * 5
     score += title_promo_hits * 5
     score += title_ai_hits * 3
     score += title_action_hits * 4
@@ -404,7 +507,8 @@ def score_candidate(c: Candidate, trusted_domains: List[str], extra_keywords: Li
         return None
 
     snippet = norm_space(desc or c.snippet or body[:400], 500)
-    matched = sorted(set(promo_words + ai_words + action_words + extra_words))[:25]
+    matched = sorted(set(promo_words + ai_words + action_words + extra_words + strong_words))[:25]
+    source_category = classify_source(c.url, full_title, full_text[:2000])
     chash = hashlib.sha256((full_title + d + body[:800]).encode("utf-8", "ignore")).hexdigest()[:16]
     return ScoredItem(
         url=c.url,
@@ -419,6 +523,7 @@ def score_candidate(c: Candidate, trusted_domains: List[str], extra_keywords: Li
         matched_keywords=matched,
         published_guess=guess_date(full_text[:3000]),
         content_hash=chash,
+        source_category=source_category,
     )
 
 
@@ -435,29 +540,82 @@ def dedupe(items: List[ScoredItem]) -> List[ScoredItem]:
     return sorted(best.values(), key=lambda x: x.score, reverse=True)
 
 
+def select_report_items(scored: List[ScoredItem], state: Dict[str, dict]) -> Tuple[List[ScoredItem], int]:
+    """按国内/国外分别挑选：国外官号3 + 国外情报7 + 国内官号3 + 国内情报7，最多20条。"""
+    buckets: Dict[str, List[ScoredItem]] = {
+        "foreign_official": [],
+        "foreign_intel": [],
+        "domestic_official": [],
+        "domestic_intel": [],
+    }
+    skipped = 0
+
+    for it in scored:
+        key = hashlib.sha256((it.url + it.content_hash).encode("utf-8", "ignore")).hexdigest()[:20]
+        if key in state:
+            skipped += 1
+            continue
+        if it.source_category in buckets:
+            buckets[it.source_category].append(it)
+
+    picked: List[ScoredItem] = []
+    picked.extend(buckets["foreign_official"][:MAX_FOREIGN_OFFICIAL_REPORT_ITEMS])
+    picked.extend(buckets["foreign_intel"][:MAX_FOREIGN_INTEL_REPORT_ITEMS])
+    picked.extend(buckets["domestic_official"][:MAX_DOMESTIC_OFFICIAL_REPORT_ITEMS])
+    picked.extend(buckets["domestic_intel"][:MAX_DOMESTIC_INTEL_REPORT_ITEMS])
+    return picked, skipped
+
+
 def make_report(new_items: List[ScoredItem], skipped_count: int, errors: List[str]) -> str:
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
     lines = []
     if new_items:
-        lines.append("# 🎯 深度学习 / AI 优惠活动监控日报")
+        lines.append("# 🎯 深度学习 / AI 优惠活动监控周报")
         lines.append("")
-        lines.append(f"发现 {len(new_items)} 条可能有价值的新活动信息。")
+        foreign_official_count = sum(1 for x in new_items if x.source_category == "foreign_official")
+        foreign_intel_count = sum(1 for x in new_items if x.source_category == "foreign_intel")
+        domestic_official_count = sum(1 for x in new_items if x.source_category == "domestic_official")
+        domestic_intel_count = sum(1 for x in new_items if x.source_category == "domestic_intel")
+        lines.append(
+            f"发现 {len(new_items)} 条可能有价值的新活动信息："
+            f"国外官号 {foreign_official_count} 条，国外情报 {foreign_intel_count} 条；"
+            f"国内官号 {domestic_official_count} 条，国内情报 {domestic_intel_count} 条。"
+        )
         lines.append("")
-        for i, it in enumerate(new_items, 1):
-            lines.append(f"## {i}. {it.title}")
-            lines.append(f"- 评分：{it.score}")
-            lines.append(f"- 来源域名：{it.domain}")
-            if it.published_guess:
-                lines.append(f"- 疑似日期：{it.published_guess}")
-            lines.append(f"- 命中词：{', '.join(it.matched_keywords[:12])}")
-            if it.snippet:
-                lines.append(f"- 摘要：{it.snippet}")
-            lines.append(f"- 链接：{it.url}")
+        lines.append(
+            "筛选规则：国外官号最多 "
+            f"{MAX_FOREIGN_OFFICIAL_REPORT_ITEMS} 条，国外情报最多 {MAX_FOREIGN_INTEL_REPORT_ITEMS} 条；"
+            "国内官号最多 "
+            f"{MAX_DOMESTIC_OFFICIAL_REPORT_ITEMS} 条，国内情报最多 {MAX_DOMESTIC_INTEL_REPORT_ITEMS} 条；"
+            "已过滤普通模型发布、泛 AI 新闻和弱优惠信息。"
+        )
+        lines.append("")
+
+        order = ["foreign_official", "foreign_intel", "domestic_official", "domestic_intel"]
+        seq = 1
+        for cat in order:
+            group = [x for x in new_items if x.source_category == cat]
+            if not group:
+                continue
+            lines.append(f"## {CATEGORY_LABELS.get(cat, cat)}")
             lines.append("")
+            for it in group:
+                lines.append(f"### {seq}. {it.title}")
+                lines.append(f"- 评分：{it.score}")
+                lines.append(f"- 来源类别：{CATEGORY_LABELS.get(it.source_category, it.source_category)}")
+                lines.append(f"- 来源域名：{it.domain}")
+                if it.published_guess:
+                    lines.append(f"- 疑似日期：{it.published_guess}")
+                lines.append(f"- 命中词：{', '.join(it.matched_keywords[:14])}")
+                if it.snippet:
+                    lines.append(f"- 摘要：{it.snippet}")
+                lines.append(f"- 链接：{it.url}")
+                lines.append("")
+                seq += 1
     else:
-        lines.append("# 📭 深度学习优惠活动日报")
+        lines.append("# 📭 深度学习优惠活动周报")
         lines.append("")
-        lines.append("今天没有发现新的、可信度足够高的深度学习/AI优惠活动。")
+        lines.append("本周期没有发现新的、可信度足够高的深度学习/AI优惠活动。")
         lines.append("")
     lines.append(f"跳过的已发送/重复信息：{skipped_count} 条")
     lines.append(f"抓取异常：{len(errors)} 个")
@@ -470,7 +628,6 @@ def make_report(new_items: List[ScoredItem], skipped_count: int, errors: List[st
         if len(errors) > 10:
             lines.append(f"- ... 其余 {len(errors) - 10} 个异常已省略")
     return "\n".join(lines).strip() + "\n"
-
 
 def pushplus_send(title: str, content: str) -> None:
     token = os.getenv("PUSHPLUS_TOKEN", "").strip()
@@ -489,11 +646,20 @@ def pushplus_send(title: str, content: str) -> None:
 
 
 def current_year_queries(queries: List[str]) -> List[str]:
+    if not ADD_YEAR_VARIANTS:
+        # 去重保序
+        seen = set()
+        uniq = []
+        for q in queries:
+            if q not in seen:
+                seen.add(q)
+                uniq.append(q)
+        return uniq
+
     year = datetime.now().year
     out = []
     for q in queries:
         out.append(q)
-        # 给普通查询加一点时间限定；site: 查询不强行重复太多
         if "site:" not in q and str(year) not in q:
             out.append(f"{q} {year}")
     # 去重保序
@@ -581,23 +747,17 @@ def main() -> int:
     scored = dedupe(scored)
     print(f"[INFO] Scored hits: {len(scored)}")
 
-    # 5) 去除已发送
-    new_items: List[ScoredItem] = []
-    skipped = 0
-    for it in scored:
+    # 5) 去除已发送，并按“国外3+7、国内3+7”挑选本次推送
+    new_items, skipped = select_report_items(scored, state)
+    for it in new_items:
         key = hashlib.sha256((it.url + it.content_hash).encode("utf-8", "ignore")).hexdigest()[:20]
-        if key in state:
-            skipped += 1
-            continue
-        new_items.append(it)
         state[key] = {
             "title": it.title,
             "url": it.url,
             "score": it.score,
+            "source_category": it.source_category,
             "sent_at": datetime.now(timezone.utc).isoformat(),
         }
-        if len(new_items) >= int(os.getenv("MAX_REPORT_ITEMS", "10")):
-            break
 
     # 控制 state 大小
     if len(state) > 1000:
@@ -610,7 +770,7 @@ def main() -> int:
 
     print(report)
     if new_items or SEND_EMPTY_REPORT:
-        pushplus_send("深度学习 / AI 优惠活动监控日报", report)
+        pushplus_send("深度学习 / AI 优惠活动监控周报", report)
         print("[INFO] PushPlus sent.")
     else:
         print("[INFO] No new items and SEND_EMPTY_REPORT=false; skip push.")
