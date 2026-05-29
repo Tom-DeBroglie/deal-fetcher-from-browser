@@ -72,5 +72,26 @@
     "score": 49,
     "source_category": "foreign_official",
     "sent_at": "2026-05-29T17:44:48.063974+00:00"
+  },
+  "6830154600f96bc6bdd9": {
+    "title": "基于Amazon Quick与Amazon Bedrock AgentCore打造对话式 FinOps助手 | Amazon Web Services",
+    "url": "https://aws.amazon.com/cn/blogs/china/based-on-amazon-quick-amazon-bedrock-agentcore/",
+    "score": 121,
+    "source_category": "foreign_official",
+    "sent_at": "2026-05-29T18:02:26.698405+00:00"
+  },
+  "ed2418508dc5cd708e89": {
+    "title": "用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧神经处理单元（NPU）的交付闭环 | Amazon Web Services",
+    "url": "https://aws.amazon.com/cn/blogs/china/amazon-sagemaker-ai-qualcomm-ai-hub-training/",
+    "score": 88,
+    "source_category": "foreign_official",
+    "sent_at": "2026-05-29T18:02:26.698439+00:00"
+  },
+  "22fe57d89b3a273d05d2": {
+    "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+    "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
+    "score": 50,
+    "source_category": "foreign_official",
+    "sent_at": "2026-05-29T18:02:26.698446+00:00"
   }
 }
