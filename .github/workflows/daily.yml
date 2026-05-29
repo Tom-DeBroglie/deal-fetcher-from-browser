@@ -1,0 +1,68 @@
+name: Daily AI Deal Web Monitor
+
+on:
+  workflow_dispatch:
+    inputs:
+      send_empty_report:
+        description: '没有发现活动时也推送空报告（测试用）'
+        required: false
+        default: 'true'
+  schedule:
+    # 北京时间每天 09:10 运行；UTC 01:10
+    - cron: '10 1 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-deal-web-monitor
+  cancel-in-progress: false
+
+jobs:
+  run-monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+      TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+      SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+      SEND_EMPTY_REPORT: ${{ github.event.inputs.send_empty_report || 'false' }}
+      MAX_SEARCH_RESULTS_PER_QUERY: '5'
+      MAX_CANDIDATES_PER_RUN: '260'
+      MAX_ARTICLES_TO_FETCH: '120'
+      MIN_SCORE_TO_REPORT: '13'
+      MIN_TOTAL_KEYWORD_HITS: '3'
+      ENABLE_DDG_SEARCH: 'true'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run monitor
+        run: |
+          python web_deal_monitor.py
+
+      - name: Commit updated state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/sent_items.json data/latest_report.md || true
+          if git diff --cached --quiet; then
+            echo "No state changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: update monitor state [skip ci]"
+          git pull --rebase --autostash origin main
+          git push origin main

@@ -1,0 +1,118 @@
+# 每行一个搜索词；脚本会自动附加当前年份，site: 查询除外。
+# 目标：官方活动页 + 技术社区公开帖 + CSDN/博客园/掘金等二次传播。
+
+# ================= 通用 AI 优惠/活动 =================
+大模型 免费额度 token
+AI 免费 token 优惠
+深度学习 免费 GPU 算力
+大模型 API 免费额度
+AI 开发者 免费额度
+AI 学生 优惠 免费
+GPU 算力券 免费
+云服务器 AI 算力 免费试用
+开发者 免费 credits AI
+模型 API 优惠券 代金券
+大模型 限时优惠 API
+AI 工具 学生优惠 免费
+AI credits free student developer
+LLM API free credits student discount
+GPU cloud free credits deep learning
+
+# ================= 阿里 / 腾讯 / 百度 / 华为 / 火山 / 字节 =================
+阿里云 百炼 免费额度 token
+阿里云 百炼 代金券 优惠
+通义千问 API 免费额度
+ModelScope 魔搭 免费算力 活动
+腾讯云 混元 免费额度
+腾讯云 AI 代金券 学生优惠
+百度千帆 免费额度
+文心一言 API 免费额度
+华为云 ModelArts 免费算力
+华为云 昇腾 免费算力 活动
+火山方舟 免费额度 token
+火山引擎 方舟 代金券 优惠
+豆包 API 免费额度
+豆包 大模型 优惠 活动
+扣子 Coze 免费额度 活动
+字节跳动 AI 开发者 免费额度
+
+# ================= 小米 / vivo / 美团 / DeepSeek / 国内AI厂商 =================
+小米 MiMo 免费 token
+小米 MiMo Token Plan 优惠
+小米 AI 开放平台 活动
+小米 Agent 生态平台 公测 活动
+小爱开放平台 AI 活动
+vivo AI 开放平台 活动
+vivo 开发者 AI 活动
+美团 LongCat 开源 活动
+美团 AI 开发者 活动
+美团 NoCode AI 活动 奖励
+DeepSeek API 免费额度
+DeepSeek API 优惠 折扣
+DeepSeek API 价格调整 优惠
+DeepSeek 开发者 活动
+Kimi 免费额度 token
+Moonshot Kimi API 代金券
+智谱 GLM 免费 token
+BigModel 免费额度
+硅基流动 免费额度
+SiliconFlow 免费 token
+讯飞星火 免费 token
+科大讯飞 星火 免费额度
+MiniMax 免费 token API
+零一万物 API 免费额度
+百川智能 API 免费额度
+
+# ================= 国际厂商 / 学生优惠 / credits =================
+OpenAI API credits free
+OpenAI student discount API credits
+Claude student discount credits
+Anthropic API credits free
+Gemini 学生优惠
+Google AI Studio free credits
+Google Cloud AI credits student
+GitHub Copilot 学生 免费
+GitHub Student Developer Pack AI credits
+Microsoft Azure AI student credits
+Microsoft Foundry credits
+Azure AI 免费额度
+AWS Bedrock credits student
+AWS Educate AI credits
+Hugging Face inference free credits
+Hugging Face student credits
+NVIDIA developer credits AI
+RunPod GPU credits student
+Lambda Labs GPU credits
+Colab 免费 GPU
+Kaggle 免费 GPU
+
+# ================= CSDN / 博客园 / 掘金 / 开源中国 定向搜索 =================
+site:blog.csdn.net 大模型 免费额度 token
+site:blog.csdn.net AI 免费 token 优惠
+site:blog.csdn.net 免费 GPU 算力 深度学习
+site:blog.csdn.net 阿里云百炼 免费额度
+site:blog.csdn.net 火山方舟 免费额度
+site:blog.csdn.net DeepSeek API 优惠
+site:blog.csdn.net 硅基流动 免费额度
+site:blog.csdn.net 智谱 免费 token
+site:blog.csdn.net ModelScope 免费算力
+site:blog.csdn.net AutoDL 学生优惠
+site:blog.csdn.net Google Colab 免费 GPU
+site:blog.csdn.net 大模型 API 免费额度 汇总
+site:blog.csdn.net Token Plan 优惠 大模型
+site:blog.csdn.net 小米 MiMo token 优惠
+site:blog.csdn.net 字节 豆包 免费额度
+site:blog.csdn.net 微软 Azure AI credits
+site:juejin.cn AI 免费 token 优惠
+site:juejin.cn 大模型 免费额度
+site:juejin.cn 免费 GPU 算力
+site:cnblogs.com 深度学习 免费 GPU 算力
+site:cnblogs.com 大模型 免费额度 token
+site:oschina.net AI 免费额度 token
+site:oschina.net 大模型 免费额度
+site:infoq.cn AI 免费额度 token
+site:developer.aliyun.com 百炼 免费额度 token
+site:cloud.tencent.com/developer 混元 免费额度
+site:developer.volcengine.com 火山方舟 免费额度
+site:huaweicloud.com ModelArts 免费算力
+site:tech.meituan.com AI 活动 LongCat
