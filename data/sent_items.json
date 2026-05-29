@@ -58,5 +58,19 @@
     "url": "https://openai.com/index/introducing-gpt-5-5/",
     "score": 39,
     "sent_at": "2026-05-29T17:21:29.583363+00:00"
+  },
+  "cdd65b20130a6a146f5d": {
+    "title": "Introducing GPT-5.3-Codex",
+    "url": "https://openai.com/index/introducing-gpt-5-3-codex/",
+    "score": 57,
+    "source_category": "foreign_official",
+    "sent_at": "2026-05-29T17:44:48.063914+00:00"
+  },
+  "4b589938462f900dbac4": {
+    "title": "Claude Haiku 4.5",
+    "url": "https://www.anthropic.com/claude/haiku",
+    "score": 49,
+    "source_category": "foreign_official",
+    "sent_at": "2026-05-29T17:44:48.063974+00:00"
   }
 }
