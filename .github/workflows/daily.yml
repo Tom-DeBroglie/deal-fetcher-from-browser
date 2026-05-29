@@ -1,4 +1,4 @@
-name: Weekly AI Deal Web Monitor
+name: 深度学习AI优惠活动每周监控
 
 on:
   workflow_dispatch:
@@ -8,8 +8,8 @@ on:
         required: false
         default: 'true'
   schedule:
-    # 北京时间每周一 08:00 运行；UTC 周一 00:00
-    - cron: '0 0 * * 1'
+    # 北京时间每周一 08:05 运行；UTC 周一 00:05
+    - cron: '5 0 * * 1'
 
 permissions:
   contents: write
@@ -27,20 +27,40 @@ jobs:
       TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
       SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
       SEND_EMPTY_REPORT: ${{ github.event.inputs.send_empty_report || 'false' }}
+
+      # 搜索与抓取规模：比之前更均衡，不让国外官网把候选名额全部占掉
       MAX_SEARCH_RESULTS_PER_QUERY: '3'
-      MAX_CANDIDATES_PER_RUN: '170'
-      MAX_ARTICLES_TO_FETCH: '70'
-      MIN_SCORE_TO_REPORT: '15'
-      MIN_TOTAL_KEYWORD_HITS: '3'
-      MIN_STRONG_PROMO_HITS: '1'
+      MAX_SEARCH_QUERIES: '80'
+      MAX_SOURCE_PAGES: '90'
+      MAX_SOURCE_LINKS_PER_PAGE: '24'
+      MAX_CANDIDATES_PER_RUN: '280'
+      MAX_ARTICLES_TO_FETCH: '90'
+
+      # 每类信息源强制进入正文抓取的候选数量
+      CATEGORY_FETCH_FOREIGN_OFFICIAL: '18'
+      CATEGORY_FETCH_FOREIGN_INTEL: '22'
+      CATEGORY_FETCH_DOMESTIC_OFFICIAL: '22'
+      CATEGORY_FETCH_DOMESTIC_INTEL: '28'
+
+      # 推送数量：国外 3+7，国内 3+7，最多20条
       MAX_FOREIGN_OFFICIAL_REPORT_ITEMS: '3'
       MAX_FOREIGN_INTEL_REPORT_ITEMS: '7'
       MAX_DOMESTIC_OFFICIAL_REPORT_ITEMS: '3'
       MAX_DOMESTIC_INTEL_REPORT_ITEMS: '7'
+
+      # 筛选更偏向“优惠词”，AI词只是辅助
+      MIN_SCORE_TO_REPORT: '18'
+      MIN_PROMO_HITS: '1'
+      MIN_AI_HITS: '1'
+      MIN_TOTAL_KEYWORD_HITS: '3'
+      MIN_STRONG_PROMO_HITS: '2'
+      MIN_DEAL_SIGNAL_HITS: '1'
+
       REQUEST_TIMEOUT: '10'
-      SLEEP_SECONDS: '0.2'
+      SLEEP_SECONDS: '0.15'
       ADD_YEAR_VARIANTS: 'false'
       ENABLE_DDG_SEARCH: 'true'
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
