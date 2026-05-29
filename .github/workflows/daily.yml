@@ -1,4 +1,4 @@
-name: Daily AI Deal Web Monitor
+name: Weekly AI Deal Web Monitor
 
 on:
   workflow_dispatch:
@@ -8,8 +8,8 @@ on:
         required: false
         default: 'true'
   schedule:
-    # 北京时间每天 09:10 运行；UTC 01:10
-    - cron: '10 1 * * *'
+    # 北京时间每周一 08:00 运行；UTC 周一 00:00
+    - cron: '0 0 * * 1'
 
 permissions:
   contents: write
@@ -27,11 +27,19 @@ jobs:
       TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
       SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
       SEND_EMPTY_REPORT: ${{ github.event.inputs.send_empty_report || 'false' }}
-      MAX_SEARCH_RESULTS_PER_QUERY: '5'
-      MAX_CANDIDATES_PER_RUN: '260'
-      MAX_ARTICLES_TO_FETCH: '120'
-      MIN_SCORE_TO_REPORT: '13'
+      MAX_SEARCH_RESULTS_PER_QUERY: '3'
+      MAX_CANDIDATES_PER_RUN: '170'
+      MAX_ARTICLES_TO_FETCH: '70'
+      MIN_SCORE_TO_REPORT: '15'
       MIN_TOTAL_KEYWORD_HITS: '3'
+      MIN_STRONG_PROMO_HITS: '1'
+      MAX_FOREIGN_OFFICIAL_REPORT_ITEMS: '3'
+      MAX_FOREIGN_INTEL_REPORT_ITEMS: '7'
+      MAX_DOMESTIC_OFFICIAL_REPORT_ITEMS: '3'
+      MAX_DOMESTIC_INTEL_REPORT_ITEMS: '7'
+      REQUEST_TIMEOUT: '10'
+      SLEEP_SECONDS: '0.2'
+      ADD_YEAR_VARIANTS: 'false'
       ENABLE_DDG_SEARCH: 'true'
     steps:
       - name: Checkout
