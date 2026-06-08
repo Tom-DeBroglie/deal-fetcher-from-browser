@@ -100,5 +100,26 @@
     "score": 97,
     "source_category": "foreign_official",
     "sent_at": "2026-06-01T05:11:37.617513+00:00"
+  },
+  "275a391f25f48d4ce3b3": {
+    "title": "Dreaming: Better memory for a more helpful ChatGPT",
+    "url": "https://openai.com/index/chatgpt-memory-dreaming/",
+    "score": 70,
+    "source_category": "foreign_official",
+    "sent_at": "2026-06-08T04:58:05.027291+00:00"
+  },
+  "7a1b29dd0fb57efd7276": {
+    "title": "Run Local AI Agents with Faster Models and Multi-Node Clustering on NVIDIA DGX Spark | NVIDIA Technical Blog",
+    "url": "https://developer.nvidia.com/blog/run-local-ai-agents-with-faster-models-and-multi-node-clustering-on-nvidia-dgx-spark/",
+    "score": 59,
+    "source_category": "foreign_official",
+    "sent_at": "2026-06-08T04:58:05.027322+00:00"
+  },
+  "47a0fa2a23ffbaea089e": {
+    "title": "Build Personal AI Agents on Windows PCs with New Tools from Microsoft and NVIDIA | NVIDIA Technical Blog",
+    "url": "https://developer.nvidia.com/blog/build-personal-ai-agents-on-windows-pcs-with-new-tools-from-microsoft-and-nvidia/",
+    "score": 58,
+    "source_category": "foreign_official",
+    "sent_at": "2026-06-08T04:58:05.027326+00:00"
   }
 }
