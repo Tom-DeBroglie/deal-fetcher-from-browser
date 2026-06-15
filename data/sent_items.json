@@ -121,5 +121,26 @@
     "score": 58,
     "source_category": "foreign_official",
     "sent_at": "2026-06-08T04:58:05.027326+00:00"
+  },
+  "0c52c45cc9012da03e01": {
+    "title": "Claude Fable 5 and Claude Mythos 5",
+    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "score": 90,
+    "source_category": "foreign_official",
+    "sent_at": "2026-06-15T05:23:41.951524+00:00"
+  },
+  "af08a1df6cac5d652c66": {
+    "title": "当 Agentic AI 重塑生产关系 – 智能体浪潮下的企业战略与行动框架 | Amazon Web Services",
+    "url": "https://aws.amazon.com/cn/blogs/china/agentic-ai-intelligent-enterprise-framework/",
+    "score": 85,
+    "source_category": "foreign_official",
+    "sent_at": "2026-06-15T05:23:41.951544+00:00"
+  },
+  "509ae283e6398542a814": {
+    "title": "Dreaming: Better memory for a more helpful ChatGPT",
+    "url": "https://openai.com/index/chatgpt-memory-dreaming/",
+    "score": 70,
+    "source_category": "foreign_official",
+    "sent_at": "2026-06-15T05:23:41.951548+00:00"
   }
 }

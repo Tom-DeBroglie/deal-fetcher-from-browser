@@ -6,7 +6,25 @@
 
 ## 国外大厂官号
 
-### 1. Dreaming: Better memory for a more helpful ChatGPT
+### 1. Claude Fable 5 and Claude Mythos 5
+- 评分：90
+- 来源类别：国外大厂官号
+- 来源域名：anthropic.com
+- 强优惠词命中：5；活动信号命中：2
+- 命中词：agent, ai, api, apply, claude, deal, early access, offer, pricing, rag, token, tokens, usage credits
+- 摘要：Today we’re launching Claude Fable 5: a Mythos-class model that we’ve made safe for general use.
+- 链接：https://www.anthropic.com/news/claude-fable-5-mythos-5
+
+### 2. 当 Agentic AI 重塑生产关系 – 智能体浪潮下的企业战略与行动框架 | Amazon Web Services
+- 评分：85
+- 来源类别：国外大厂官号
+- 来源域名：aws.amazon.com
+- 强优惠词命中：2；活动信号命中：4
+- 命中词：agent, ai, api, aws, claude, deepseek, google cloud, gpu, llm, offer, qwen, rag, token, 人工智能, 升级, 大模型
+- 摘要：Agentic AI 正驱动第四次工业革命的生产力跃迁，其自主规划、多智能体协作与持久记忆能力正系统性重构企业组织形态与决策机制。本文基于多行业实证与前沿研究，提出"生产力决定生产关系"的分析框架，论证企业级智能体驾驭平台对弥合技术能力与管理秩序间张力的关键作用，并为组织智能化转型提供行动路径。
+- 链接：https://aws.amazon.com/cn/blogs/china/agentic-ai-intelligent-enterprise-framework/
+
+### 3. Dreaming: Better memory for a more helpful ChatGPT
 - 评分：70
 - 来源类别：国外大厂官号
 - 来源域名：openai.com
@@ -15,27 +33,9 @@
 - 摘要：ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.
 - 链接：https://openai.com/index/chatgpt-memory-dreaming/
 
-### 2. Run Local AI Agents with Faster Models and Multi-Node Clustering on NVIDIA DGX Spark | NVIDIA Technical Blog
-- 评分：59
-- 来源类别：国外大厂官号
-- 来源域名：developer.nvidia.com
-- 强优惠词命中：2；活动信号命中：2
-- 命中词：agent, ai, api, claim, get started, gpu, llm, offer, offers, qwen, register, token
-- 摘要：The rise of autonomous, long-running AI agents has introduced a new class of compute demand, namely tasks that maintain large context windows…
-- 链接：https://developer.nvidia.com/blog/run-local-ai-agents-with-faster-models-and-multi-node-clustering-on-nvidia-dgx-spark/
-
-### 3. Build Personal AI Agents on Windows PCs with New Tools from Microsoft and NVIDIA | NVIDIA Technical Blog
-- 评分：58
-- 来源类别：国外大厂官号
-- 来源域名：developer.nvidia.com
-- 强优惠词命中：2；活动信号命中：1
-- 命中词：agent, ai, api, apply, free, get started, gpu, llm, offer, offers, qwen, rag, token, tokens
-- 摘要：AI agents are changing how you interact with your PC. Creators, developers, and AI enthusiasts are already using these agents extensively to assist with day-to…
-- 链接：https://developer.nvidia.com/blog/build-personal-ai-agents-on-windows-pcs-with-new-tools-from-microsoft-and-nvidia/
-
-跳过的已发送/重复信息：1 条
-抓取异常：29 个
-运行时间：2026-06-08 04:58
+跳过的已发送/重复信息：2 条
+抓取异常：30 个
+运行时间：2026-06-15 05:23
 
 ## 抓取异常（仅显示前10个）
 - DDG search failed: 讯飞星火 免费 token -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=%E8%AE%AF%E9%A3%9E%E6%98%9F%E7%81%AB+%E5%85%8D%E8%B4%B9+token&kl=cn-zh
@@ -48,4 +48,4 @@
 - DDG search failed: Claude student discount credits -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=Claude+student+discount+credits&kl=cn-zh
 - DDG search failed: Anthropic API credits free -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=Anthropic+API+credits+free&kl=cn-zh
 - DDG search failed: Gemini 学生优惠 -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=Gemini+%E5%AD%A6%E7%94%9F%E4%BC%98%E6%83%A0&kl=cn-zh
-- ... 其余 19 个异常已省略
+- ... 其余 20 个异常已省略
