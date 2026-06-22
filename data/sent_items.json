@@ -142,5 +142,26 @@
     "score": 70,
     "source_category": "foreign_official",
     "sent_at": "2026-06-15T05:23:41.951548+00:00"
+  },
+  "c7b88edcab322187d332": {
+    "title": "750B MoE 模型从自建 RoCE 集群迁移至 AWS EFA：Prefill-Decode 分离推理的通信架构验证 | Amazon Web Services",
+    "url": "https://aws.amazon.com/cn/blogs/china/750-b-moe-model-roce-cluster-migration-aws-efa/",
+    "score": 79,
+    "source_category": "foreign_official",
+    "sent_at": "2026-06-22T05:24:40.600188+00:00"
+  },
+  "f5498dafdfd4e4ed35ae": {
+    "title": "How A2A is Building a World of Collaborative Agents- Google Developers Blog",
+    "url": "https://developers.googleblog.com/how-a2a-is-building-a-world-of-collaborative-agents/",
+    "score": 66,
+    "source_category": "foreign_official",
+    "sent_at": "2026-06-22T05:24:40.600240+00:00"
+  },
+  "bb9bc1fdbc0ffda7f7fd": {
+    "title": "Build On-Device AI Companions with the NVIDIA ACE Game Agent SDK and Unreal Engine 5 Plugins | NVIDIA Technical Blog",
+    "url": "https://developer.nvidia.com/blog/build-on-device-ai-companions-with-the-nvidia-ace-game-agent-sdk-and-unreal-engine-5-plugins/",
+    "score": 52,
+    "source_category": "foreign_official",
+    "sent_at": "2026-06-22T05:24:40.600243+00:00"
   }
 }
