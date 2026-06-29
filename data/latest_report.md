@@ -6,36 +6,36 @@
 
 ## 国外大厂官号
 
-### 1. 750B MoE 模型从自建 RoCE 集群迁移至 AWS EFA：Prefill-Decode 分离推理的通信架构验证 | Amazon Web Services
-- 评分：79
+### 1. AWS 一周综述：纽约峰会回顾、河内 Local Zone、Bedrock 中的 Grok 4.3、降价等（2026 年 6 月 22 日） | Amazon Web Services
+- 评分：123
+- 来源类别：国外大厂官号
+- 来源域名：aws.amazon.com
+- 强优惠词命中：5；活动信号命中：5
+- 命中词：agent, ai, api, aws, claude, gpu, rag, 人工智能, 免费, 推理, 模型, 降价
+- 摘要：纽约峰会回顾、河内 Local Zone、Bedrock 中的 Grok 4.3、降价等
+- 链接：https://aws.amazon.com/cn/blogs/china/aws-weekly-roundup-ny-summit-recap-local-zone-in-hanoi-grok-4-3-in-bedrock-price-reductions-and-more-june-22-2026/
+
+### 2. Optimize model training on Amazon SageMaker AI with NVIDIA Blackwell | Amazon Web Services
+- 评分：72
 - 来源类别：国外大厂官号
 - 来源域名：aws.amazon.com
 - 强优惠词命中：2；活动信号命中：3
-- 命中词：agent, ai, api, aws, deepseek, glm, gpu, token, tokens, 人工智能, 入口, 升级, 大模型, 开放体验, 推理, 机器学习
-- 摘要：客户在自建机房使用基于 ConnectX 系列网卡的 RoCE 集群运行 GLM-5.1-FP8（750B MoE）模型推理服务，采用 Prefill-Decode (PD) 分离架构：2 台 Prefill 节点 + 2 台 Decode 节点，每台 8×H200 GPU。期望利用 AWS 弹性算力扩展本地 GPU 计算资源，同时获得更快的硬件迭代能力，从而降低硬件采购和折旧风险。AWS EFA 能否在这种极端复杂的通信负载下，达到 ConnectX 系列 + RoCE 方案的性能水平？我们基于客户的实际部署需求进行了完整的理论分析和实际验证
-- 链接：https://aws.amazon.com/cn/blogs/china/750-b-moe-model-roce-cluster-migration-aws-efa/
+- 命中词：ai, apply, aws, free, get started, gpu, llm, offer, offers, rag, token, tokens
+- 摘要：This post shows you how to configure training jobs on Amazon SageMaker AI to get the most out of Blackwell’s architecture on AWS. You learn how to select batch sizes and sequence lengths that take advantage of Blackwell’s expanded memory, choose the right precision format for your model size (1B to 64B parameters), and apply activation checkpointing strategically. By the end, you have a practical framework for tuning your training configuration and launching distributed training jobs on P6-B200 
+- 链接：https://aws.amazon.com/blogs/machine-learning/optimize-model-training-on-amazon-sagemaker-ai-with-nvidia-blackwell/
 
-### 2. How A2A is Building a World of Collaborative Agents- Google Developers Blog
-- 评分：66
+### 3. Previewing GPT-5.6 Sol: a next-generation model
+- 评分：67
 - 来源类别：国外大厂官号
-- 来源域名：developers.googleblog.com
-- 强优惠词命中：5；活动信号命中：1
-- 命中词：agent, ai, api, deal, deals, developer program, free, gemini, get started, google cloud, gpu, llm, offer, rag, register
-- 摘要：Discover how the Agent-to-Agent (A2A) protocol is shifting AI from isolated tools to a collaborative ecosystem, enabling secure, autonomous agent handoffs and scalable workflows like FoldRun.
-- 链接：https://developers.googleblog.com/how-a2a-is-building-a-world-of-collaborative-agents/
+- 来源域名：openai.com
+- 强优惠词命中：2；活动信号命中：1
+- 命中词：agent, ai, api, apply, chatgpt, discount, gpu, offer, openai, pricing, rag, token, tokens
+- 摘要：OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack.
+- 链接：https://openai.com/index/previewing-gpt-5-6-sol/
 
-### 3. Build On-Device AI Companions with the NVIDIA ACE Game Agent SDK and Unreal Engine 5 Plugins | NVIDIA Technical Blog
-- 评分：52
-- 来源类别：国外大厂官号
-- 来源域名：developer.nvidia.com
-- 强优惠词命中：3；活动信号命中：1
-- 命中词：agent, ai, api, get started, gpu, llm, offer, offers, qwen, rag, register
-- 摘要：NVIDIA RTX technologies are deeply integrated into Unreal Engine 5 through the NVIDIA RTX Branch of Unreal Engine and the NVIDIA DLSS Unreal Engine plugin.
-- 链接：https://developer.nvidia.com/blog/build-on-device-ai-companions-with-the-nvidia-ace-game-agent-sdk-and-unreal-engine-5-plugins/
-
-跳过的已发送/重复信息：2 条
+跳过的已发送/重复信息：3 条
 抓取异常：29 个
-运行时间：2026-06-22 05:24
+运行时间：2026-06-29 04:54
 
 ## 抓取异常（仅显示前10个）
 - DDG search failed: 讯飞星火 免费 token -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=%E8%AE%AF%E9%A3%9E%E6%98%9F%E7%81%AB+%E5%85%8D%E8%B4%B9+token&kl=cn-zh

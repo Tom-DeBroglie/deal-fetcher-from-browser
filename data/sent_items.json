@@ -163,5 +163,26 @@
     "score": 52,
     "source_category": "foreign_official",
     "sent_at": "2026-06-22T05:24:40.600243+00:00"
+  },
+  "3537437b5139363deb8b": {
+    "title": "AWS 一周综述：纽约峰会回顾、河内 Local Zone、Bedrock 中的 Grok 4.3、降价等（2026 年 6 月 22 日） | Amazon Web Services",
+    "url": "https://aws.amazon.com/cn/blogs/china/aws-weekly-roundup-ny-summit-recap-local-zone-in-hanoi-grok-4-3-in-bedrock-price-reductions-and-more-june-22-2026/",
+    "score": 123,
+    "source_category": "foreign_official",
+    "sent_at": "2026-06-29T04:54:48.332496+00:00"
+  },
+  "b19c8ba2e229b0a88c68": {
+    "title": "Optimize model training on Amazon SageMaker AI with NVIDIA Blackwell | Amazon Web Services",
+    "url": "https://aws.amazon.com/blogs/machine-learning/optimize-model-training-on-amazon-sagemaker-ai-with-nvidia-blackwell/",
+    "score": 72,
+    "source_category": "foreign_official",
+    "sent_at": "2026-06-29T04:54:48.332524+00:00"
+  },
+  "ee3abb0abc17cfcb427e": {
+    "title": "Previewing GPT-5.6 Sol: a next-generation model",
+    "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+    "score": 67,
+    "source_category": "foreign_official",
+    "sent_at": "2026-06-29T04:54:48.332529+00:00"
   }
 }
