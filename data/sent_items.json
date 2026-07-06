@@ -184,5 +184,26 @@
     "score": 67,
     "source_category": "foreign_official",
     "sent_at": "2026-06-29T04:54:48.332529+00:00"
+  },
+  "a4829ca0288f2def7a5b": {
+    "title": "Run NVIDIA Nemotron and OpenAI GPT OSS models on Amazon Bedrock in AWS GovCloud (US) | Amazon Web Services",
+    "url": "https://aws.amazon.com/blogs/machine-learning/run-nvidia-nemotron-and-openai-gpt-oss-models-on-amazon-bedrock-in-aws-govcloud-us/",
+    "score": 121,
+    "source_category": "foreign_official",
+    "sent_at": "2026-07-06T04:24:14.927345+00:00"
+  },
+  "dd71e8c3783b4cbb4110": {
+    "title": "Claude Science, an AI workbench for scientists",
+    "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+    "score": 68,
+    "source_category": "foreign_official",
+    "sent_at": "2026-07-06T04:24:14.927374+00:00"
+  },
+  "13d083799de85e464f43": {
+    "title": "Driving the Agent Quality Flywheel from Your Coding Agent- Google Developers Blog",
+    "url": "https://developers.googleblog.com/driving-the-agent-quality-flywheel-from-your-coding-agent/",
+    "score": 62,
+    "source_category": "foreign_official",
+    "sent_at": "2026-07-06T04:24:14.927378+00:00"
   }
 }
