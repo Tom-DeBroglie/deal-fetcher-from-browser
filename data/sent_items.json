@@ -205,5 +205,26 @@
     "score": 62,
     "source_category": "foreign_official",
     "sent_at": "2026-07-06T04:24:14.927378+00:00"
+  },
+  "311c8700fe240c3bb495": {
+    "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+    "url": "https://openai.com/index/gpt-5-6/",
+    "score": 93,
+    "source_category": "foreign_official",
+    "sent_at": "2026-07-13T03:47:20.791333+00:00"
+  },
+  "98971a949f1b318e9de3": {
+    "title": "We terminated a TPU mid-training and it recovered in seconds: Introduction to elastic training with MaxText- Google Developers Blog",
+    "url": "https://developers.googleblog.com/we-terminated-a-tpu-mid-training-and-it-recovered-in-seconds-introduction-to-elastic-training-with-maxtext/",
+    "score": 67,
+    "source_category": "foreign_official",
+    "sent_at": "2026-07-13T03:47:20.791357+00:00"
+  },
+  "39693adbe8b48c684730": {
+    "title": "Fine-tune NVIDIA Nemotron 3 models with Amazon SageMaker AI serverless model customization | Amazon Web Services",
+    "url": "https://aws.amazon.com/blogs/machine-learning/fine-tune-nvidia-nemotron-3-models-with-amazon-sagemaker-ai-serverless-model-customization/",
+    "score": 63,
+    "source_category": "foreign_official",
+    "sent_at": "2026-07-13T03:47:20.791361+00:00"
   }
 }
