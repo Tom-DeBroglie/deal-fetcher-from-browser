@@ -6,36 +6,36 @@
 
 ## 国外大厂官号
 
-### 1. GPT-5.6: Frontier intelligence that scales with your ambition
-- 评分：93
+### 1. ChatGPT is now a partner for your most ambitious work
+- 评分：61
 - 来源类别：国外大厂官号
 - 来源域名：openai.com
-- 强优惠词命中：2；活动信号命中：5
-- 命中词：agent, ai, api, apply, chatgpt, claude, discount, free, gpu, modal, offer, openai, pricing, rag, token, tokens
-- 摘要：More intelligence from every token, stronger performance per dollar, and more capability on demand for your hardest work.
-- 链接：https://openai.com/index/gpt-5-6/
-
-### 2. We terminated a TPU mid-training and it recovered in seconds: Introduction to elastic training with MaxText- Google Developers Blog
-- 评分：67
-- 来源类别：国外大厂官号
-- 来源域名：developers.googleblog.com
-- 强优惠词命中：5；活动信号命中：1
-- 命中词：agent, ai, api, deadline, developer program, free, gemini, google cloud, llm, offer, offers, qwen, rag
-- 摘要：Learn how elastic training on Cloud TPUs uses MaxText and Pathways to recover from multi-node hardware failures in under 2 minutes without restarting the job.
-- 链接：https://developers.googleblog.com/we-terminated-a-tpu-mid-training-and-it-recovered-in-seconds-introduction-to-elastic-training-with-maxtext/
-
-### 3. Fine-tune NVIDIA Nemotron 3 models with Amazon SageMaker AI serverless model customization | Amazon Web Services
-- 评分：63
-- 来源类别：国外大厂官号
-- 来源域名：aws.amazon.com
 - 强优惠词命中：3；活动信号命中：1
-- 命中词：agent, ai, api, aws, deal, get started, gpu, llm, offer, offers, pricing, rag, register, token, tokens
-- 摘要：In this post, we explore what makes the Nemotron 3 architecture unique, walk through the fine-tuning techniques available, and show you step-by-step how to get started with serverless customization using SageMaker Studio.
-- 链接：https://aws.amazon.com/blogs/machine-learning/fine-tune-nvidia-nemotron-3-models-with-amazon-sagemaker-ai-serverless-model-customization/
+- 命中词：agent, ai, api, chatgpt, deal, deals, free, get started, offer, openai, pricing, register
+- 摘要：ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work.
+- 链接：https://openai.com/index/chatgpt-for-your-most-ambitious-work/
 
-跳过的已发送/重复信息：2 条
+### 2. Develop Lightweight USD Runtimes Faster with AI Agents | NVIDIA Technical Blog
+- 评分：55
+- 来源类别：国外大厂官号
+- 来源域名：developer.nvidia.com
+- 强优惠词命中：2；活动信号命中：2
+- 命中词：agent, ai, api, apply, free, get started, gpu, offer, offers, rag
+- 摘要：OpenUSD is an open, extensible framework that provides a common scene description language for physical AI. It enables teams to bring CAD data…
+- 链接：https://developer.nvidia.com/blog/develop-lightweight-usd-runtimes-faster-with-ai-agents/
+
+### 3. NVIDIA Achieves Leading Agentic Coding Performance on First Agentic AI Benchmark | NVIDIA Technical Blog
+- 评分：50
+- 来源类别：国外大厂官号
+- 来源域名：developer.nvidia.com
+- 强优惠词命中：2；活动信号命中：1
+- 命中词：agent, ai, api, apply, deepseek, gpu, llm, offer, offers, rag, token, xiaomi
+- 摘要：AI agents have fundamentally changed the complexity of inference workloads. Until now, the industry has struggled to define a standard for measuring how…
+- 链接：https://developer.nvidia.com/blog/nvidia-achieves-leading-agentic-coding-performance-on-first-agentic-ai-benchmark/
+
+跳过的已发送/重复信息：3 条
 抓取异常：29 个
-运行时间：2026-07-13 03:47
+运行时间：2026-07-20 03:55
 
 ## 抓取异常（仅显示前10个）
 - DDG search failed: 讯飞星火 免费 token -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=%E8%AE%AF%E9%A3%9E%E6%98%9F%E7%81%AB+%E5%85%8D%E8%B4%B9+token&kl=cn-zh

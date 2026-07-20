@@ -226,5 +226,26 @@
     "score": 63,
     "source_category": "foreign_official",
     "sent_at": "2026-07-13T03:47:20.791361+00:00"
+  },
+  "f38b4dc594ac944aa312": {
+    "title": "ChatGPT is now a partner for your most ambitious work",
+    "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+    "score": 61,
+    "source_category": "foreign_official",
+    "sent_at": "2026-07-20T03:55:34.180931+00:00"
+  },
+  "f28a7247e60d9398f9a0": {
+    "title": "Develop Lightweight USD Runtimes Faster with AI Agents | NVIDIA Technical Blog",
+    "url": "https://developer.nvidia.com/blog/develop-lightweight-usd-runtimes-faster-with-ai-agents/",
+    "score": 55,
+    "source_category": "foreign_official",
+    "sent_at": "2026-07-20T03:55:34.180958+00:00"
+  },
+  "d09edb89bb6589244d9f": {
+    "title": "NVIDIA Achieves Leading Agentic Coding Performance on First Agentic AI Benchmark | NVIDIA Technical Blog",
+    "url": "https://developer.nvidia.com/blog/nvidia-achieves-leading-agentic-coding-performance-on-first-agentic-ai-benchmark/",
+    "score": 50,
+    "source_category": "foreign_official",
+    "sent_at": "2026-07-20T03:55:34.180963+00:00"
   }
 }
