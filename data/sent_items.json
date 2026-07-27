@@ -247,5 +247,26 @@
     "score": 50,
     "source_category": "foreign_official",
     "sent_at": "2026-07-20T03:55:34.180963+00:00"
+  },
+  "d3bcd1ebe45fb41a32e6": {
+    "title": "Apply for Anthropic’s AI for Science rare disease research grants",
+    "url": "https://www.anthropic.com/news/rare-disease-research-grants",
+    "score": 182,
+    "source_category": "foreign_official",
+    "sent_at": "2026-07-27T03:55:49.880674+00:00"
+  },
+  "d37eca71a9454665963a": {
+    "title": "Create a LangChain Deep Agents Harness Profile for NVIDIA Nemotron 3 Ultra to Improve Performance | NVIDIA Technical Blog",
+    "url": "https://developer.nvidia.com/blog/create-a-langchain-deep-agents-harness-profile-for-nvidia-nemotron-3-ultra-to-improve-performance/",
+    "score": 44,
+    "source_category": "foreign_official",
+    "sent_at": "2026-07-27T03:55:49.880699+00:00"
+  },
+  "d6999c3efa97f55fa3fd": {
+    "title": "Run Ray on TPU, Part 1: The foundations- Google Developers Blog",
+    "url": "https://developers.googleblog.com/run-ray-on-tpu-part-1-the-foundations/",
+    "score": 41,
+    "source_category": "foreign_official",
+    "sent_at": "2026-07-27T03:55:49.880704+00:00"
   }
 }

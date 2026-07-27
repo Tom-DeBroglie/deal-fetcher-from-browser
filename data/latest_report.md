@@ -6,36 +6,36 @@
 
 ## 国外大厂官号
 
-### 1. ChatGPT is now a partner for your most ambitious work
-- 评分：61
+### 1. Apply for Anthropic’s AI for Science rare disease research grants
+- 评分：182
 - 来源类别：国外大厂官号
-- 来源域名：openai.com
-- 强优惠词命中：3；活动信号命中：1
-- 命中词：agent, ai, api, chatgpt, deal, deals, free, get started, offer, openai, pricing, register
-- 摘要：ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work.
-- 链接：https://openai.com/index/chatgpt-for-your-most-ambitious-work/
+- 来源域名：anthropic.com
+- 强优惠词命中：20；活动信号命中：5
+- 命中词：Claude credits, agent, ai, api, api credits, apply, claim, claude, grant, modal, rag, research grant
+- 摘要：Anthropic is sharing a focused call for AI for Science applications centered specifically on rare genetic diseases. Accepted applicants will receive up to $50,000 in Claude credits over six months, with the goal of building a community of researchers looking into how AI can reshape our understanding of rare disease.
+- 链接：https://www.anthropic.com/news/rare-disease-research-grants
 
-### 2. Develop Lightweight USD Runtimes Faster with AI Agents | NVIDIA Technical Blog
-- 评分：55
-- 来源类别：国外大厂官号
-- 来源域名：developer.nvidia.com
-- 强优惠词命中：2；活动信号命中：2
-- 命中词：agent, ai, api, apply, free, get started, gpu, offer, offers, rag
-- 摘要：OpenUSD is an open, extensible framework that provides a common scene description language for physical AI. It enables teams to bring CAD data…
-- 链接：https://developer.nvidia.com/blog/develop-lightweight-usd-runtimes-faster-with-ai-agents/
-
-### 3. NVIDIA Achieves Leading Agentic Coding Performance on First Agentic AI Benchmark | NVIDIA Technical Blog
-- 评分：50
+### 2. Create a LangChain Deep Agents Harness Profile for NVIDIA Nemotron 3 Ultra to Improve Performance | NVIDIA Technical Blog
+- 评分：44
 - 来源类别：国外大厂官号
 - 来源域名：developer.nvidia.com
 - 强优惠词命中：2；活动信号命中：1
-- 命中词：agent, ai, api, apply, deepseek, gpu, llm, offer, offers, rag, token, xiaomi
-- 摘要：AI agents have fundamentally changed the complexity of inference workloads. Until now, the industry has struggled to define a standard for measuring how…
-- 链接：https://developer.nvidia.com/blog/nvidia-achieves-leading-agentic-coding-performance-on-first-agentic-ai-benchmark/
+- 命中词：agent, ai, api, apply, free, llm, offer, offers, together ai
+- 摘要：Agentic systems often face a trade-off between accuracy and cost. The highest-performing proprietary frontier models and harnesses provide top accuracy but are…
+- 链接：https://developer.nvidia.com/blog/create-a-langchain-deep-agents-harness-profile-for-nvidia-nemotron-3-ultra-to-improve-performance/
 
-跳过的已发送/重复信息：3 条
+### 3. Run Ray on TPU, Part 1: The foundations- Google Developers Blog
+- 评分：41
+- 来源类别：国外大厂官号
+- 来源域名：developers.googleblog.com
+- 强优惠词命中：2；活动信号命中：1
+- 命中词：agent, ai, api, apply, developer program, free, gemini, google cloud, gpu, llm
+- 摘要：Ray 2.55 introduces official, first-class support for Google Cloud TPUs, enabling developers to run distributed Python workloads on Google's accelerators using the familiar Ray task-and-actor APIs. To handle the strict networking requirement of keeping multi-host TPU "slices" together over their Inter-Chip Interconnect (ICI), the KubeRay Operator on GKE automatically provisions and labels the underlying hardware layout. Ray Core utilizes these labels via its slice_placement_group() primitive to 
+- 链接：https://developers.googleblog.com/run-ray-on-tpu-part-1-the-foundations/
+
+跳过的已发送/重复信息：1 条
 抓取异常：29 个
-运行时间：2026-07-20 03:55
+运行时间：2026-07-27 03:55
 
 ## 抓取异常（仅显示前10个）
 - DDG search failed: 讯飞星火 免费 token -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=%E8%AE%AF%E9%A3%9E%E6%98%9F%E7%81%AB+%E5%85%8D%E8%B4%B9+token&kl=cn-zh
