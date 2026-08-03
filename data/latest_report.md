@@ -6,36 +6,36 @@
 
 ## 国外大厂官号
 
-### 1. Apply for Anthropic’s AI for Science rare disease research grants
-- 评分：182
+### 1. Accelerating scientific discovery with ChatGPT for Academic Researchers
+- 评分：127
 - 来源类别：国外大厂官号
-- 来源域名：anthropic.com
-- 强优惠词命中：20；活动信号命中：5
-- 命中词：Claude credits, agent, ai, api, api credits, apply, claim, claude, grant, modal, rag, research grant
-- 摘要：Anthropic is sharing a focused call for AI for Science applications centered specifically on rare genetic diseases. Accepted applicants will receive up to $50,000 in Claude credits over six months, with the goal of building a community of researchers looking into how AI can reshape our understanding of rare disease.
-- 链接：https://www.anthropic.com/news/rare-disease-research-grants
+- 来源域名：openai.com
+- 强优惠词命中：10；活动信号命中：4
+- 命中词：agent, ai, apply, chatgpt, free, free access, grant, offer, openai
+- 摘要：OpenAI is giving 100,000 academic researchers free access to ChatGPT's most advanced AI models to accelerate scientific research, collaboration, and discovery.
+- 链接：https://openai.com/index/chatgpt-for-academic-researchers/
 
-### 2. Create a LangChain Deep Agents Harness Profile for NVIDIA Nemotron 3 Ultra to Improve Performance | NVIDIA Technical Blog
-- 评分：44
+### 2. Azure OpenAI in Foundry Models | Microsoft Azure
+- 评分：104
 - 来源类别：国外大厂官号
-- 来源域名：developer.nvidia.com
-- 强优惠词命中：2；活动信号命中：1
-- 命中词：agent, ai, api, apply, free, llm, offer, offers, together ai
-- 摘要：Agentic systems often face a trade-off between accuracy and cost. The highest-performing proprietary frontier models and harnesses provide top accuracy but are…
-- 链接：https://developer.nvidia.com/blog/create-a-langchain-deep-agents-harness-profile-for-nvidia-nemotron-3-ultra-to-improve-performance/
+- 来源域名：azure.microsoft.com
+- 强优惠词命中：8；活动信号命中：1
+- 命中词：agent, ai, api, apply, azure, copilot, deal, get started, github copilot, modal, offer, offers, openai, pricing
+- 摘要：Access and fine-tune the latest AI reasoning and multimodal models, integrate AI agents, and deploy secure, enterprise-ready generative AI solutions.
+- 链接：https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/
 
-### 3. Run Ray on TPU, Part 1: The foundations- Google Developers Blog
-- 评分：41
+### 3. Advancing the price-performance frontier with GPT-5.6
+- 评分：79
 - 来源类别：国外大厂官号
-- 来源域名：developers.googleblog.com
-- 强优惠词命中：2；活动信号命中：1
-- 命中词：agent, ai, api, apply, developer program, free, gemini, google cloud, gpu, llm
-- 摘要：Ray 2.55 introduces official, first-class support for Google Cloud TPUs, enabling developers to run distributed Python workloads on Google's accelerators using the familiar Ray task-and-actor APIs. To handle the strict networking requirement of keeping multi-host TPU "slices" together over their Inter-Chip Interconnect (ICI), the KubeRay Operator on GKE automatically provisions and labels the underlying hardware layout. Ray Core utilizes these labels via its slice_placement_group() primitive to 
-- 链接：https://developers.googleblog.com/run-ray-on-tpu-part-1-the-foundations/
+- 来源域名：openai.com
+- 强优惠词命中：3；活动信号命中：1
+- 命中词：agent, ai, api, apply, aws, chatgpt, deal, free, offer, openai, pricing, token, tokens
+- 摘要：Explore lower GPT‑5.6 pricing for Luna and Terra—and how OpenAI’s more efficient models help enterprises deploy AI workflows at scale.
+- 链接：https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/
 
-跳过的已发送/重复信息：1 条
-抓取异常：29 个
-运行时间：2026-07-27 03:55
+跳过的已发送/重复信息：4 条
+抓取异常：30 个
+运行时间：2026-08-03 03:46
 
 ## 抓取异常（仅显示前10个）
 - DDG search failed: 讯飞星火 免费 token -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=%E8%AE%AF%E9%A3%9E%E6%98%9F%E7%81%AB+%E5%85%8D%E8%B4%B9+token&kl=cn-zh
@@ -48,4 +48,4 @@
 - DDG search failed: Claude student discount credits -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=Claude+student+discount+credits&kl=cn-zh
 - DDG search failed: Anthropic API credits free -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=Anthropic+API+credits+free&kl=cn-zh
 - DDG search failed: Gemini 学生优惠 -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=Gemini+%E5%AD%A6%E7%94%9F%E4%BC%98%E6%83%A0&kl=cn-zh
-- ... 其余 19 个异常已省略
+- ... 其余 20 个异常已省略

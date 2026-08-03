@@ -268,5 +268,26 @@
     "score": 41,
     "source_category": "foreign_official",
     "sent_at": "2026-07-27T03:55:49.880704+00:00"
+  },
+  "3483843de4f42065f3b1": {
+    "title": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
+    "url": "https://openai.com/index/chatgpt-for-academic-researchers/",
+    "score": 127,
+    "source_category": "foreign_official",
+    "sent_at": "2026-08-03T03:46:18.659182+00:00"
+  },
+  "d4b2d47924e0512dde3f": {
+    "title": "Azure OpenAI in Foundry Models | Microsoft Azure",
+    "url": "https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/",
+    "score": 104,
+    "source_category": "foreign_official",
+    "sent_at": "2026-08-03T03:46:18.659212+00:00"
+  },
+  "604fb9388cd03608f9f8": {
+    "title": "Advancing the price-performance frontier with GPT-5.6",
+    "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+    "score": 79,
+    "source_category": "foreign_official",
+    "sent_at": "2026-08-03T03:46:18.659216+00:00"
   }
 }
