@@ -289,5 +289,26 @@
     "score": 79,
     "source_category": "foreign_official",
     "sent_at": "2026-08-03T03:46:18.659216+00:00"
+  },
+  "c7709205efe361f0a9bb": {
+    "title": "后端即服务：AI时代应用部署新范式 | Amazon Web Services",
+    "url": "https://aws.amazon.com/cn/blogs/china/backend-service-ai-application-deploy/",
+    "score": 117,
+    "source_category": "foreign_official",
+    "sent_at": "2026-08-10T02:27:44.562102+00:00"
+  },
+  "63804deeda1b4607c83e": {
+    "title": "Apple is getting this wrong",
+    "url": "https://openai.com/index/apple-is-getting-this-wrong/",
+    "score": 87,
+    "source_category": "foreign_official",
+    "sent_at": "2026-08-10T02:27:44.562131+00:00"
+  },
+  "fd22e2e851a5a2cb2c8a": {
+    "title": "AWS re:Invent 2026 | The Premier Cloud and AI Conference",
+    "url": "https://aws.amazon.com/events/reinvent/?nc2=h_dsc_ex_s1",
+    "score": 85,
+    "source_category": "foreign_official",
+    "sent_at": "2026-08-10T02:27:44.562137+00:00"
   }
 }

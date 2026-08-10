@@ -6,36 +6,36 @@
 
 ## 国外大厂官号
 
-### 1. Accelerating scientific discovery with ChatGPT for Academic Researchers
-- 评分：127
+### 1. 后端即服务：AI时代应用部署新范式 | Amazon Web Services
+- 评分：117
+- 来源类别：国外大厂官号
+- 来源域名：aws.amazon.com
+- 强优惠词命中：3；活动信号命中：9
+- 命中词：agent, ai, api, aws, claude, free, free tier, rag, 人工智能, 免费, 免费额度, 升级, 大模型, 模型, 注册, 认证
+- 摘要：AI Agent 创建数据库已成为行业新常态——在主流 Serverless 数据库平台上，80% 以上的数据库已由 Agent 创建。本文介绍如何基于 Aurora PostgreSQL + Supabase 构建后端即服务（BaaS）方案，为 AI Coding 场景提供开箱即用的数据库、认证、API 自动生成等能力。
+- 链接：https://aws.amazon.com/cn/blogs/china/backend-service-ai-application-deploy/
+
+### 2. Apple is getting this wrong
+- 评分：87
 - 来源类别：国外大厂官号
 - 来源域名：openai.com
-- 强优惠词命中：10；活动信号命中：4
-- 命中词：agent, ai, apply, chatgpt, free, free access, grant, offer, openai
-- 摘要：OpenAI is giving 100,000 academic researchers free access to ChatGPT's most advanced AI models to accelerate scientific research, collaboration, and discovery.
-- 链接：https://openai.com/index/chatgpt-for-academic-researchers/
+- 强优惠词命中：3；活动信号命中：6
+- 命中词：agent, ai, aws, claim, free, offer, openai
+- 摘要：OpenAI addresses Apple’s baseless lawsuit, corrects claims about its employees, and shares messages documenting what happened.
+- 链接：https://openai.com/index/apple-is-getting-this-wrong/
 
-### 2. Azure OpenAI in Foundry Models | Microsoft Azure
-- 评分：104
+### 3. AWS re:Invent 2026 | The Premier Cloud and AI Conference
+- 评分：85
 - 来源类别：国外大厂官号
-- 来源域名：azure.microsoft.com
-- 强优惠词命中：8；活动信号命中：1
-- 命中词：agent, ai, api, apply, azure, copilot, deal, get started, github copilot, modal, offer, offers, openai, pricing
-- 摘要：Access and fine-tune the latest AI reasoning and multimodal models, integrate AI agents, and deploy secure, enterprise-ready generative AI solutions.
-- 链接：https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/
+- 来源域名：aws.amazon.com
+- 强优惠词命中：3；活动信号命中：4
+- 命中词：agent, ai, aws, discount, pricing, register, token
+- 摘要：Join 60,000+ attendees at AWS re:Invent 2026, the largest cloud and AI conference. 2,200+ sessions on generative AI, machine learning, serverless, and more. Nov 30-Dec 4, Las Vegas. Register now.
+- 链接：https://aws.amazon.com/events/reinvent/?nc2=h_dsc_ex_s1
 
-### 3. Advancing the price-performance frontier with GPT-5.6
-- 评分：79
-- 来源类别：国外大厂官号
-- 来源域名：openai.com
-- 强优惠词命中：3；活动信号命中：1
-- 命中词：agent, ai, api, apply, aws, chatgpt, deal, free, offer, openai, pricing, token, tokens
-- 摘要：Explore lower GPT‑5.6 pricing for Luna and Terra—and how OpenAI’s more efficient models help enterprises deploy AI workflows at scale.
-- 链接：https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/
-
-跳过的已发送/重复信息：4 条
-抓取异常：30 个
-运行时间：2026-08-03 03:46
+跳过的已发送/重复信息：2 条
+抓取异常：29 个
+运行时间：2026-08-10 02:27
 
 ## 抓取异常（仅显示前10个）
 - DDG search failed: 讯飞星火 免费 token -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=%E8%AE%AF%E9%A3%9E%E6%98%9F%E7%81%AB+%E5%85%8D%E8%B4%B9+token&kl=cn-zh
@@ -48,4 +48,4 @@
 - DDG search failed: Claude student discount credits -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=Claude+student+discount+credits&kl=cn-zh
 - DDG search failed: Anthropic API credits free -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=Anthropic+API+credits+free&kl=cn-zh
 - DDG search failed: Gemini 学生优惠 -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=Gemini+%E5%AD%A6%E7%94%9F%E4%BC%98%E6%83%A0&kl=cn-zh
-- ... 其余 20 个异常已省略
+- ... 其余 19 个异常已省略
