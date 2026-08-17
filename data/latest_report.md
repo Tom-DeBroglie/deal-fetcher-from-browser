@@ -6,36 +6,36 @@
 
 ## 国外大厂官号
 
-### 1. 后端即服务：AI时代应用部署新范式 | Amazon Web Services
-- 评分：117
+### 1. Route AI Agents Across Models with NVIDIA NeMo Switchyard | NVIDIA Technical Blog
+- 评分：81
 - 来源类别：国外大厂官号
-- 来源域名：aws.amazon.com
-- 强优惠词命中：3；活动信号命中：9
-- 命中词：agent, ai, api, aws, claude, free, free tier, rag, 人工智能, 免费, 免费额度, 升级, 大模型, 模型, 注册, 认证
-- 摘要：AI Agent 创建数据库已成为行业新常态——在主流 Serverless 数据库平台上，80% 以上的数据库已由 Agent 创建。本文介绍如何基于 Aurora PostgreSQL + Supabase 构建后端即服务（BaaS）方案，为 AI Coding 场景提供开箱即用的数据库、认证、API 自动生成等能力。
-- 链接：https://aws.amazon.com/cn/blogs/china/backend-service-ai-application-deploy/
+- 来源域名：developer.nvidia.com
+- 强优惠词命中：2；活动信号命中：3
+- 命中词：agent, ai, api, apply, claude, deepseek, embedding, free, get started, hugging face, kimi, llm, offer, offers, openai, pricing
+- 摘要：Learn how NVIDIA NeMo Switchyard routes AI agent workloads across models using tuning-free and tunable routers that balance model capability, cost, and latency.
+- 链接：https://developer.nvidia.com/blog/route-ai-agent-workloads-across-models-with-nvidia-nemo-switchyard/
 
-### 2. Apple is getting this wrong
-- 评分：87
+### 2. Enable on-demand expertise with Agent Skills in Genkit Go- Google Developers Blog
+- 评分：76
 - 来源类别：国外大厂官号
-- 来源域名：openai.com
-- 强优惠词命中：3；活动信号命中：6
-- 命中词：agent, ai, aws, claim, free, offer, openai
-- 摘要：OpenAI addresses Apple’s baseless lawsuit, corrects claims about its employees, and shares messages documenting what happened.
-- 链接：https://openai.com/index/apple-is-getting-this-wrong/
+- 来源域名：developers.googleblog.com
+- 强优惠词命中：4；活动信号命中：2
+- 命中词：agent, ai, api, apply, developer program, gemini, get started, google cloud, modal, offer, offers, register, token, tokens
+- 摘要：Optimize token usage in Genkit Go using Agent Skills. Learn how to implement progressive disclosure with SKILL.md to load specialized AI workflows on demand.
+- 链接：https://developers.googleblog.com/enable-on-demand-expertise-with-agent-skills-in-genkit-go/
 
-### 3. AWS re:Invent 2026 | The Premier Cloud and AI Conference
-- 评分：85
+### 3. HeyGen x Google Cloud: Bringing Avatar IV to TPUs- Google Developers Blog
+- 评分：73
 - 来源类别：国外大厂官号
-- 来源域名：aws.amazon.com
-- 强优惠词命中：3；活动信号命中：4
-- 命中词：agent, ai, aws, discount, pricing, register, token
-- 摘要：Join 60,000+ attendees at AWS re:Invent 2026, the largest cloud and AI conference. 2,200+ sessions on generative AI, machine learning, serverless, and more. Nov 30-Dec 4, Las Vegas. Register now.
-- 链接：https://aws.amazon.com/events/reinvent/?nc2=h_dsc_ex_s1
+- 来源域名：developers.googleblog.com
+- 强优惠词命中：3；活动信号命中：3
+- 命中词：agent, ai, api, deadline, deal, developer program, embedding, free, google cloud, gpu, register, token, tokens
+- 摘要：Discover how HeyGen optimized its Avatar IV video generation model on Google Cloud Trillium TPUs, achieving a 1.86x speedup through advanced kernel and XLA compiler tuning.
+- 链接：https://developers.googleblog.com/heygen-x-google-cloud-bringing-avatar-iv-to-tpus/
 
-跳过的已发送/重复信息：2 条
+跳过的已发送/重复信息：1 条
 抓取异常：29 个
-运行时间：2026-08-10 02:27
+运行时间：2026-08-17 01:50
 
 ## 抓取异常（仅显示前10个）
 - DDG search failed: 讯飞星火 免费 token -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=%E8%AE%AF%E9%A3%9E%E6%98%9F%E7%81%AB+%E5%85%8D%E8%B4%B9+token&kl=cn-zh

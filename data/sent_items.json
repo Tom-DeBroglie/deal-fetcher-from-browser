@@ -310,5 +310,26 @@
     "score": 85,
     "source_category": "foreign_official",
     "sent_at": "2026-08-10T02:27:44.562137+00:00"
+  },
+  "e1de1aed1697708117ec": {
+    "title": "Route AI Agents Across Models with NVIDIA NeMo Switchyard | NVIDIA Technical Blog",
+    "url": "https://developer.nvidia.com/blog/route-ai-agent-workloads-across-models-with-nvidia-nemo-switchyard/",
+    "score": 81,
+    "source_category": "foreign_official",
+    "sent_at": "2026-08-17T01:50:08.712765+00:00"
+  },
+  "6877ed4e7d1d271fa694": {
+    "title": "Enable on-demand expertise with Agent Skills in Genkit Go- Google Developers Blog",
+    "url": "https://developers.googleblog.com/enable-on-demand-expertise-with-agent-skills-in-genkit-go/",
+    "score": 76,
+    "source_category": "foreign_official",
+    "sent_at": "2026-08-17T01:50:08.712793+00:00"
+  },
+  "2d2da22da1180ad6ad28": {
+    "title": "HeyGen x Google Cloud: Bringing Avatar IV to TPUs- Google Developers Blog",
+    "url": "https://developers.googleblog.com/heygen-x-google-cloud-bringing-avatar-iv-to-tpus/",
+    "score": 73,
+    "source_category": "foreign_official",
+    "sent_at": "2026-08-17T01:50:08.712798+00:00"
   }
 }
