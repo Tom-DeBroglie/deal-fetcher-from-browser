@@ -6,36 +6,36 @@
 
 ## 国外大厂官号
 
-### 1. Route AI Agents Across Models with NVIDIA NeMo Switchyard | NVIDIA Technical Blog
-- 评分：81
+### 1. Where Security Fits in an AI Agent Stack | NVIDIA Technical Blog
+- 评分：106
 - 来源类别：国外大厂官号
 - 来源域名：developer.nvidia.com
-- 强优惠词命中：2；活动信号命中：3
-- 命中词：agent, ai, api, apply, claude, deepseek, embedding, free, get started, hugging face, kimi, llm, offer, offers, openai, pricing
-- 摘要：Learn how NVIDIA NeMo Switchyard routes AI agent workloads across models using tuning-free and tunable routers that balance model capability, cost, and latency.
-- 链接：https://developer.nvidia.com/blog/route-ai-agent-workloads-across-models-with-nvidia-nemo-switchyard/
+- 强优惠词命中：8；活动信号命中：3
+- 命中词：agent, ai, api, apply, claim, claude, deepseek, grant, offer, openai
+- 摘要：As AI agents become more capable and operate over longer horizons, building security and trust into the applications they power becomes increasingly important.
+- 链接：https://developer.nvidia.com/blog/where-security-fits-in-an-ai-agent-stack/
 
-### 2. Enable on-demand expertise with Agent Skills in Genkit Go- Google Developers Blog
-- 评分：76
+### 2. AWS re:Invent 2026 | The Premier Cloud and AI Conference
+- 评分：83
+- 来源类别：国外大厂官号
+- 来源域名：aws.amazon.com
+- 强优惠词命中：3；活动信号命中：4
+- 命中词：agent, ai, aws, discount, pricing, register, token
+- 摘要：Join 60,000+ attendees at AWS re:Invent 2026, the largest cloud and AI conference. 2,200+ sessions on generative AI, machine learning, serverless, and more. Nov 30-Dec 4, Las Vegas. Register now.
+- 链接：https://aws.amazon.com/events/reinvent/?nc2=h_dsc_ex_s1
+
+### 3. Build zero-trust AI agents with Google's Agent Development Kit- Google Developers Blog
+- 评分：55
 - 来源类别：国外大厂官号
 - 来源域名：developers.googleblog.com
-- 强优惠词命中：4；活动信号命中：2
-- 命中词：agent, ai, api, apply, developer program, gemini, get started, google cloud, modal, offer, offers, register, token, tokens
-- 摘要：Optimize token usage in Genkit Go using Agent Skills. Learn how to implement progressive disclosure with SKILL.md to load specialized AI workflows on demand.
-- 链接：https://developers.googleblog.com/enable-on-demand-expertise-with-agent-skills-in-genkit-go/
+- 强优惠词命中：3；活动信号命中：1
+- 命中词：agent, ai, api, apply, developer program, gemini, get started, google cloud, grant, llm
+- 摘要：Build secure, zero-trust AI agents with Google's ADK. Protect production state using cryptographic signatures, gVisor sandboxing, and semantic gateways.
+- 链接：https://developers.googleblog.com/build-zero-trust-ai-agents-with-googles-agent-development-kit/
 
-### 3. HeyGen x Google Cloud: Bringing Avatar IV to TPUs- Google Developers Blog
-- 评分：73
-- 来源类别：国外大厂官号
-- 来源域名：developers.googleblog.com
-- 强优惠词命中：3；活动信号命中：3
-- 命中词：agent, ai, api, deadline, deal, developer program, embedding, free, google cloud, gpu, register, token, tokens
-- 摘要：Discover how HeyGen optimized its Avatar IV video generation model on Google Cloud Trillium TPUs, achieving a 1.86x speedup through advanced kernel and XLA compiler tuning.
-- 链接：https://developers.googleblog.com/heygen-x-google-cloud-bringing-avatar-iv-to-tpus/
-
-跳过的已发送/重复信息：1 条
+跳过的已发送/重复信息：3 条
 抓取异常：29 个
-运行时间：2026-08-17 01:50
+运行时间：2026-08-24 01:51
 
 ## 抓取异常（仅显示前10个）
 - DDG search failed: 讯飞星火 免费 token -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=%E8%AE%AF%E9%A3%9E%E6%98%9F%E7%81%AB+%E5%85%8D%E8%B4%B9+token&kl=cn-zh

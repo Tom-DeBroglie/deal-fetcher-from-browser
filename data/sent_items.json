@@ -331,5 +331,26 @@
     "score": 73,
     "source_category": "foreign_official",
     "sent_at": "2026-08-17T01:50:08.712798+00:00"
+  },
+  "cf6de3669f5b29ebf527": {
+    "title": "Where Security Fits in an AI Agent Stack | NVIDIA Technical Blog",
+    "url": "https://developer.nvidia.com/blog/where-security-fits-in-an-ai-agent-stack/",
+    "score": 106,
+    "source_category": "foreign_official",
+    "sent_at": "2026-08-24T01:51:51.761211+00:00"
+  },
+  "83bcac1034db62a42b63": {
+    "title": "AWS re:Invent 2026 | The Premier Cloud and AI Conference",
+    "url": "https://aws.amazon.com/events/reinvent/?nc2=h_dsc_ex_s1",
+    "score": 83,
+    "source_category": "foreign_official",
+    "sent_at": "2026-08-24T01:51:51.761240+00:00"
+  },
+  "64e7a332bd30205785ed": {
+    "title": "Build zero-trust AI agents with Google's Agent Development Kit- Google Developers Blog",
+    "url": "https://developers.googleblog.com/build-zero-trust-ai-agents-with-googles-agent-development-kit/",
+    "score": 55,
+    "source_category": "foreign_official",
+    "sent_at": "2026-08-24T01:51:51.761246+00:00"
   }
 }
