@@ -352,5 +352,26 @@
     "score": 55,
     "source_category": "foreign_official",
     "sent_at": "2026-08-24T01:51:51.761246+00:00"
+  },
+  "7c220b79fb79052d5241": {
+    "title": "How Claude's text watermarking works",
+    "url": "https://www.anthropic.com/news/claude-text-watermark",
+    "score": 76,
+    "source_category": "foreign_official",
+    "sent_at": "2026-08-31T05:19:58.980716+00:00"
+  },
+  "a5809c7ff5be31c27e31": {
+    "title": "AWS re:Invent 2026 | The Premier Cloud and AI Conference",
+    "url": "https://aws.amazon.com/events/reinvent/?nc2=h_dsc_ex_s1",
+    "score": 70,
+    "source_category": "foreign_official",
+    "sent_at": "2026-08-31T05:19:58.980746+00:00"
+  },
+  "0e1da32850f2a909d1f1": {
+    "title": "Funding better evaluations of AI’s impact on wellbeing",
+    "url": "https://www.anthropic.com/news/wellbeing-research-grants",
+    "score": 68,
+    "source_category": "foreign_official",
+    "sent_at": "2026-08-31T05:19:58.980749+00:00"
   }
 }

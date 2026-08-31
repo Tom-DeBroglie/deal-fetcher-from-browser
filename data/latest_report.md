@@ -6,36 +6,36 @@
 
 ## 国外大厂官号
 
-### 1. Where Security Fits in an AI Agent Stack | NVIDIA Technical Blog
-- 评分：106
+### 1. How Claude's text watermarking works
+- 评分：76
 - 来源类别：国外大厂官号
-- 来源域名：developer.nvidia.com
-- 强优惠词命中：8；活动信号命中：3
-- 命中词：agent, ai, api, apply, claim, claude, deepseek, grant, offer, openai
-- 摘要：As AI agents become more capable and operate over longer horizons, building security and trust into the applications they power becomes increasingly important.
-- 链接：https://developer.nvidia.com/blog/where-security-fits-in-an-ai-agent-stack/
+- 来源域名：anthropic.com
+- 强优惠词命中：2；活动信号命中：4
+- 命中词：agent, ai, api, apply, claude, free, gemini, grant, offer, register, token, tokens
+- 摘要：Future Claude models will generate text that contains a watermark. This is a way of determining the likelihood that Claude was involved in writing the text, and we, along with several other major AI providers, are implementing this change to comply with the EU AI Act. In this article, we share answers to some of the questions we’ve received about how our chosen watermarking method works, whether it affects Claude’s outputs, and why we’re making this change.
+- 链接：https://www.anthropic.com/news/claude-text-watermark
 
 ### 2. AWS re:Invent 2026 | The Premier Cloud and AI Conference
-- 评分：83
+- 评分：70
 - 来源类别：国外大厂官号
 - 来源域名：aws.amazon.com
-- 强优惠词命中：3；活动信号命中：4
+- 强优惠词命中：2；活动信号命中：3
 - 命中词：agent, ai, aws, discount, pricing, register, token
 - 摘要：Join 60,000+ attendees at AWS re:Invent 2026, the largest cloud and AI conference. 2,200+ sessions on generative AI, machine learning, serverless, and more. Nov 30-Dec 4, Las Vegas. Register now.
 - 链接：https://aws.amazon.com/events/reinvent/?nc2=h_dsc_ex_s1
 
-### 3. Build zero-trust AI agents with Google's Agent Development Kit- Google Developers Blog
-- 评分：55
+### 3. Funding better evaluations of AI’s impact on wellbeing
+- 评分：68
 - 来源类别：国外大厂官号
-- 来源域名：developers.googleblog.com
-- 强优惠词命中：3；活动信号命中：1
-- 命中词：agent, ai, api, apply, developer program, gemini, get started, google cloud, grant, llm
-- 摘要：Build secure, zero-trust AI agents with Google's ADK. Protect production state using cryptographic signatures, gVisor sandboxing, and semantic gateways.
-- 链接：https://developers.googleblog.com/build-zero-trust-ai-agents-with-googles-agent-development-kit/
+- 来源域名：anthropic.com
+- 强优惠词命中：5；活动信号命中：1
+- 命中词：agent, ai, apply, claude, free, grant
+- 摘要：Anthropic is launching a $5 million grant program to fund independent research into how AI impacts users’ wellbeing.
+- 链接：https://www.anthropic.com/news/wellbeing-research-grants
 
 跳过的已发送/重复信息：3 条
 抓取异常：29 个
-运行时间：2026-08-24 01:51
+运行时间：2026-08-31 05:19
 
 ## 抓取异常（仅显示前10个）
 - DDG search failed: 讯飞星火 免费 token -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=%E8%AE%AF%E9%A3%9E%E6%98%9F%E7%81%AB+%E5%85%8D%E8%B4%B9+token&kl=cn-zh
