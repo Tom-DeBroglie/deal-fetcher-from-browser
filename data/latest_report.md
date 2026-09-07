@@ -6,36 +6,36 @@
 
 ## 国外大厂官号
 
-### 1. How Claude's text watermarking works
-- 评分：76
+### 1. Introducing Claude Fable 5.1 and Claude Mythos 5.1
+- 评分：108
 - 来源类别：国外大厂官号
 - 来源域名：anthropic.com
-- 强优惠词命中：2；活动信号命中：4
-- 命中词：agent, ai, api, apply, claude, free, gemini, grant, offer, register, token, tokens
-- 摘要：Future Claude models will generate text that contains a watermark. This is a way of determining the likelihood that Claude was involved in writing the text, and we, along with several other major AI providers, are implementing this change to comply with the EU AI Act. In this article, we share answers to some of the questions we’ve received about how our chosen watermarking method works, whether it affects Claude’s outputs, and why we’re making this change.
-- 链接：https://www.anthropic.com/news/claude-text-watermark
+- 强优惠词命中：8；活动信号命中：1
+- 命中词：agent, ai, aws, azure, claude, discount, discounted, free, free credit, free credits, google cloud, gpu, llm, modal, offer, pricing
+- 摘要：Our most advanced models for coding and knowledge work. Their research capabilities also offer an early glimpse of how AI models will contribute to scientific progress.
+- 链接：https://www.anthropic.com/claude-fable-and-mythos-5-1
 
-### 2. AWS re:Invent 2026 | The Premier Cloud and AI Conference
-- 评分：70
+### 2. 4 engineering patterns behind the strongest AI Agents Challenge submissions- Google Developers Blog
+- 评分：69
 - 来源类别：国外大厂官号
-- 来源域名：aws.amazon.com
+- 来源域名：developers.googleblog.com
 - 强优惠词命中：2；活动信号命中：3
-- 命中词：agent, ai, aws, discount, pricing, register, token
-- 摘要：Join 60,000+ attendees at AWS re:Invent 2026, the largest cloud and AI conference. 2,200+ sessions on generative AI, machine learning, serverless, and more. Nov 30-Dec 4, Las Vegas. Register now.
-- 链接：https://aws.amazon.com/events/reinvent/?nc2=h_dsc_ex_s1
+- 命中词：agent, ai, api, apply, claim, developer program, gemini, google cloud, token, tokens
+- 摘要：Upgrade your multi-agent systems with 4 proven engineering patterns from the Google AI Agents Challenge, including bidirectional MCP and tiered routing.
+- 链接：https://developers.googleblog.com/4-engineering-patterns-behind-the-strongest-ai-agents-challenge-submissions/
 
-### 3. Funding better evaluations of AI’s impact on wellbeing
+### 3. How to Size GPUs for AI Inference and TCO Without Overspending | NVIDIA Technical Blog
 - 评分：68
 - 来源类别：国外大厂官号
-- 来源域名：anthropic.com
-- 强优惠词命中：5；活动信号命中：1
-- 命中词：agent, ai, apply, claude, free, grant
-- 摘要：Anthropic is launching a $5 million grant program to fund independent research into how AI impacts users’ wellbeing.
-- 链接：https://www.anthropic.com/news/wellbeing-research-grants
+- 来源域名：developer.nvidia.com
+- 强优惠词命中：3；活动信号命中：1
+- 命中词：agent, ai, api, apply, copilot, deal, embedding, free, get started, gpu, hugging face, llm, offer, offers, qwen, rag
+- 摘要：The surge in AI adoption is transforming everything from chatbots to content generation. Still, a common pain point remains: How can organizations confidently…
+- 链接：https://developer.nvidia.com/blog/how-to-size-gpus-for-ai-inference-and-tco-without-overspending/
 
-跳过的已发送/重复信息：3 条
+跳过的已发送/重复信息：5 条
 抓取异常：29 个
-运行时间：2026-08-31 05:19
+运行时间：2026-09-07 04:22
 
 ## 抓取异常（仅显示前10个）
 - DDG search failed: 讯飞星火 免费 token -> 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/?q=%E8%AE%AF%E9%A3%9E%E6%98%9F%E7%81%AB+%E5%85%8D%E8%B4%B9+token&kl=cn-zh

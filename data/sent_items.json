@@ -373,5 +373,26 @@
     "score": 68,
     "source_category": "foreign_official",
     "sent_at": "2026-08-31T05:19:58.980749+00:00"
+  },
+  "19782ec0da376c392724": {
+    "title": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+    "score": 108,
+    "source_category": "foreign_official",
+    "sent_at": "2026-09-07T04:22:17.884521+00:00"
+  },
+  "524356f6874960df5d0b": {
+    "title": "4 engineering patterns behind the strongest AI Agents Challenge submissions- Google Developers Blog",
+    "url": "https://developers.googleblog.com/4-engineering-patterns-behind-the-strongest-ai-agents-challenge-submissions/",
+    "score": 69,
+    "source_category": "foreign_official",
+    "sent_at": "2026-09-07T04:22:17.884543+00:00"
+  },
+  "8005bd5984256b42ff60": {
+    "title": "How to Size GPUs for AI Inference and TCO Without Overspending | NVIDIA Technical Blog",
+    "url": "https://developer.nvidia.com/blog/how-to-size-gpus-for-ai-inference-and-tco-without-overspending/",
+    "score": 68,
+    "source_category": "foreign_official",
+    "sent_at": "2026-09-07T04:22:17.884548+00:00"
   }
 }
